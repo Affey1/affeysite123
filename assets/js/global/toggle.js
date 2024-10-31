@@ -147,5 +147,5 @@ function redirectToSite() {
     localStorage.setItem('temaSelecionado', temaAtual); // Confirma o tema antes de redirecionar
     localStorage.setItem('poemaSelecionado', poemaAtual);
 
-    window.location.href = 'file:///C:/Users/Usuario/Downloads/Test-main/Test-main/index1.html'; // Redireciona para a página
+    window.location.href = 'https://affey1.github.io/affeysite123/index1.html'; // Redireciona para a página
 }

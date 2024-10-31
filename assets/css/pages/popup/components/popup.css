@@ -1,0 +1,99 @@
+@import url(../../../global/fontes/fonts.css);
+body {
+  transition: background-color 0.5s;
+  overflow-y: visible;
+}
+
+.popup {
+  position: fixed;
+  top: 30%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: #333;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 1s;
+  font-family: 'Tormenta';
+  font-size: 36px;
+}
+
+.hidden {
+  display: none;
+}
+
+.opcoes-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  gap: 15px; 
+  align-items: center;
+}
+
+.opcao {
+  text-align: center;
+}
+
+.opcao p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.opcoes-container img {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.opcoes-container img:hover {
+  transform: scale(1.1);
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 5px solid black; /* Corrigido para ter a borda definida corretamente */
+  border-radius: 5px;
+  background-color: transparent; /* Para deixar o fundo transparente */
+  color: transparent; /* Se quiser o texto invisível, mantenha */
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Muda a cor de fundo ao passar o mouse */
+}
+
+.btn-redirect {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid black; /* Definido corretamente */
+  border-radius: 10px;
+  background-color: transparent; /* Fundo transparente */
+  color: rgb(10, 10, 10); /* Cor do texto */
+  font-family: 'Tormenta';
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.btn-redirect:hover {
+  background-color: rgba(0, 86, 179, 0.5); /* Leve mudança de fundo ao passar o mouse */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tormenta;
+}

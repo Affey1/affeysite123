@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --header-height: 3.5rem;
+  --white-color: #fff;
+  --body-color: hsla(220, 44%, 21%, 0);
+
+  /*========== Font and typography ==========*/
+  --body-font: Poppins;
+  --normal-font-size: .938rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
+
+body {
+  background-color: hsl(220, 44%, 21%);
+  color: #000000;
+  overflow-y: scroll;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.home {
+  height: 500px;
+  display: flex;
+  margin-top: 100px;
+  padding: 0 5%;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content > h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-content > h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.home-content > p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+.poems {
+  width: 375px;
+  height: 425px;
+  background-color: #ffffff00;
+  color: #000000;
+  padding: 14px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin-top: -20px;
+  margin-left: 150px;
+  transition: ease-in-out 1s;
+}
+
+.poems:hover {
+  width: 400px;
+  height: 450px;
+}
+
+.poems > h2 {
+  text-align: center;
+}
+
+.poems > p {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .home-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .poems {
+    width: 90%;
+    height: 500px;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .poems > h2 {
+    font-size: 1.5rem;
+  }
+
+  .poems > p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.ri-arrow-down-double-line {
+  color: rgb(0, 255, 21);
+  font-size: 4rem;
+  position: relative;
+  display: inline-block;
+  right: 200px;
+  top: 175px;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.about-content {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+  align-items: flex-start;
+}
+.about-content p {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  font-size: 18px;
+  margin-top: -48px;
+  margin-left: 161px;
+  align-items: flex-start;
+}
+
+.text-details {
+  padding: 0;
+  max-width: 900px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  top: 100px;
+}
+
+.text-details {
+  padding: 40px 20px; /* Ajuste o padding conforme necessário */
+  text-align: left; /* Alinha o texto à esquerda */
+  width: 100%; /* Permite que o elemento use toda a largura disponível */
+  max-width: none; /* Remove a limitação de largura */
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+.text-details h3 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.text-details p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  margin-top: 0;
+  margin-bottom: 20px; /* Adicione um espaço abaixo do parágrafo se necessário */
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos se movam para a próxima linha */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 0 5%;
+}
+
+@media (max-width: 760px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos em telas menores */
+    padding: 0; /* Remove padding lateral para tela cheia */
+  }
+
+  .about-pic {
+    width: 90%;
+    align-items: center;
+    margin-bottom: 203px; /* Espaço abaixo da imagem */
+  }
+
+  .text-details {
+    padding: 20px; /* Reduza o padding em telas menores */
+  }
+
+  .text-details h3 {
+    font-size: 32px; /* Ajuste o tamanho da fonte em telas menores */
+  }
+
+  .text-details p {
+    font-size: 16px; /* Ajuste o tamanho da fonte em telas menores */
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 0 5%;
+}
+
+.about-container {
+  display: flex;
+  gap: 100px; /* Ajuste o valor para o espaçamento desejado */
+  padding: 0 5%;
+  align-items: flex-start;
+}
+
+.about-container h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px; /* Remove margens para melhor centralização */
+}
+
+.about-details-container {
+  padding-left: 150px; /* Aumente este valor conforme necessário */
+}
+
+.about-pic img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px; /* Adicione esta linha para criar espaço abaixo da imagem */
+}
+

@@ -1,0 +1,31 @@
+@import url(../fontes/fonts.css);
+
+
+a {
+  font-family: Signika;
+}
+
+/* Cards */
+.profile-name {
+  font-family: Signika-Light;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 7rem;
+  padding: 0.75rem 0.875rem;
+  z-index: 1;
+  color: #333;
+  background-color: #fff;
+  text-align: left;
+}
+
+.profile-name h2 {
+  font-family: Signika-Light;
+  margin-bottom: 0.5rem;
+}
+
+.profile-bio {
+  font-family: Signika-Light;
+}

@@ -1,0 +1,17 @@
+@import url(../../../global/fontes/fonts.css);
+
+#poemDisplay {
+  margin-top: 20px; 
+  font-family: Signika; 
+  font-size: 16px;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.5;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+}

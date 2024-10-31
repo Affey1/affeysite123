@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/pages/popup/styles.css">
+</head>
+<body>
+    <div id="mensagem" class="popup">
+        Bem-vindo ao meu site!
+    </div>
+    <div id="opcoes" class="popup hidden">
+        <h2>Escolha uma estação:</h2>
+        <div class="opcoes-container">
+            <div class="opcao">
+                <img src="assets/images/pages/popup/inverno.png" alt="Inverno" onclick="selecionarOpcao('Inverno')" />
+            </div>
+            <div class="opcao">
+                <img src="assets/images/pages/popup/outono.png" alt="Outono" onclick="selecionarOpcao('Outono')" />
+            </div>
+            <div class="opcao">
+                <img src="assets/images/pages/popup/primavera.png" alt="Primavera" onclick="selecionarOpcao('Primavera')" />
+            </div>
+            <div class="opcao">
+                <img src="assets/images/pages/popup /verão.png" alt="Verão" onclick="selecionarOpcao('Verão')" />
+            </div>
+        </div>
+    </div>
+    <div class="color-toggle" id="colorToggle">
+        <div class="slider" id="slider">
+            <img id="sliderImage" src="assets/images/pages/popup/inverno.png" alt="Imagem do Toggle" />
+        </div>
+        <div class="marker" style="left: 45px;" onclick="moveSliderToClosestMarker(45)"></div>
+        <div class="marker" style="left: 140px;" onclick="moveSliderToClosestMarker(140)"></div>
+        <div class="marker" style="left: 235px;" onclick="moveSliderToClosestMarker(235)"></div>
+        <div class="marker" style="left: 330px;" onclick="moveSliderToClosestMarker(330)"></div>
+    </div>  
+
+    <!-- Botão de redirecionamento -->
+    <a href="https://affey.com.br/index1.html" id="botaoRedirecionamento" class="btn-redirect" onclick="redirectToSite(); return false;">Escolher corte</a>
+    
+    <script src="assets/js/global/toggle.js"></script>
+</body>
+</html>

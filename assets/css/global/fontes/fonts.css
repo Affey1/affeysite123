@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Tormenta';
+  src: url(ttf/Tormenta.ttf);
+}
+
+@font-face {
+  font-family: Signika-Light;
+  src: url(ttf/Signika/Signika.ttf);
+}
+
+@font-face {
+  font-family: Signika;
+  src: url(ttf/Signika/Signika-Light.ttf);
+}
